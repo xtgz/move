@@ -40,13 +40,13 @@ export const executeStop = () => {
 
 let execute = true;
 
-export async function executeTransaction(sKey: string,seconds: number = 10, tick: string = "MOVE") {
+export async function executeTransaction(sKey: string,seconds: number = 10, tick: string = "MOVEER") {
   const secretKey = sKey; // 修改这里，填入私钥
   const PACKAGE_ID =
     "0x830fe26674dc638af7c3d84030e2575f44a2bdc1baa1f4757cfe010a4b106b6a"; // mainnet
   const TickRecordID =
-    "0xfa6f8ab30f91a3ca6f969d117677fb4f669e08bbeed815071cf38f4d19284199"; // mainnet
-  const MINT_FEE = 100000000; // 0.1 SUI
+    "0x30ba4c703bbd6c51f6d6f7126e8fbf16bace6984703396b87c92570171ace2a3"; // mainnet
+  const MINT_FEE = 0; // 0.1 SUI
   const TICK = tick;
 
   // Keypair from an existing secret key (Uint8Array)
